@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link href="/vendor/aos/aos.css" rel="stylesheet">
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/secure_link.css">
+</head>
+<body>
+      
+    <section>
+      <div class="container">
+        <div class="guildname">
+          <div>
+          <figure class="image is-64x64 has-image-centered center">
+            <img class="is-rounded" src="<%= guild.icon ? `https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}?size=512` : 'https://i.imgur.com/RO3uUxX.png' %>">
+          </figure>
+          </div>
+          <h1 class="subj has-text-centered" style="color: white; font-weight: bolder;"><%= guild.name %></h1>
+          <br>
+          <h3 class="has-text-centered" style="color: white;"><img style='width: 55px; height: 55px;' class='img is-64x64 is-rounded' src='/static/green_circle.png'>온라인: <%= onlineMember%>   <img style='width: 55px; height: 55px;' class='img is-64x64 is-rounded' src='/static/gray_circle.png'>멤버 수: <%= guild.memberCount %></h3>
+        </div>
+        <br>
+        <h2 style="color: white;" class="has-text-centered">로그인된 계정: <%= user.username %>#<%= user.discriminator %></h2>
+        <form role='form' action="/i/<%= linkname %>" method="POST" id="my-form">
+          <div style="justify-content: center; display: flex;" class="g-recaptcha" data-sitekey="6Lch8HUhAAAAAHTVumz5wG6aqENnDxrHlzX4ii8u"></div>
+          <button type="submit">초대 수락하기</button>
+        </form>
+        <div id="status"></div>
+      </div>
+    </section>
+    <script type="text/javascript">
+      var onloadCallback = function() {
+        grecaptcha.render('html_element', {
+          'sitekey' : '<% recaptcha_key %>'
+        });
+      };
+    </script>
+    <script type="text/javascript">
+  window.onload = function() { 
+      var el = document.getElementById('g-recaptcha-response'); 
+      if (el) { 
+        el.setAttribute('required', 'required'); 
+      } 
+    }  
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+</html>

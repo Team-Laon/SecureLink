@@ -1,0 +1,39 @@
+{
+  "appenders": {
+    "app": {
+      "type": "console"
+    },
+    "infoFile": {
+      "type": "file",
+      "filename": "./src/log/info.log",
+      "maxLogSize": 5242889999999,
+      "numBackups": 3,
+      "compress": true
+    },
+    "info": {
+      "type": "logLevelFilter",
+      "level": "INFO",
+      "appender": "infoFile"
+    },
+    "errorFile": {
+      "type": "file",
+      "filename": "./src/log/error.log",
+      "maxLogSize": 524288999999,
+      "numBackups": 3,
+      "compress": true
+    },
+    "errors": {
+      "type": "logLevelFilter",
+      "level": "ERROR",
+      "appender": "errorFile"
+    }
+  },
+  "categories": {
+    "default": {
+      "appenders": [
+        "app", "errors", "info"
+      ],
+      "level": "info"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+node_modules
+src/data/config.json
+package-lock.json
+src/log
+메모.txt
+src/event/대시보드/.env

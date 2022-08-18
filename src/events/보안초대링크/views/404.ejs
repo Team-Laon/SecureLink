@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 Not Found</title>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <meta http-equiv="refresh" content="10; url=/">
+  <!-- Vendor CSS Files -->
+  <link href="/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/css/style.css" rel="stylesheet">
+  <script>
+    $(document).ready(function() {
+      let timer;
+      timer = setInterval(function() {
+        let timer_sec = Number($("#redirect_timer").text());
+        $("#redirect_timer").text(timer_sec-1)
+      }, 1000)
+    })
+  </script>
+</head>
+<body>
+  <h1 style="display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 65vh;
+  font-size: 100px;">
+    <span>4</span>
+    <span style="color: #14c871;">0</span>
+    <span>4</span>
+    </h1>
+  <h2 style="display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 10vh; */
+  font-size: 75px;">Not&nbsp;Found</h2>
+  <p style="display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;"><span class="redirect_timer" id="redirect_timer">10</span>초 후 메인 페이지로 이동합니다</p>
+</body>
+</html>

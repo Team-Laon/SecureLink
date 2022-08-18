@@ -1,0 +1,4 @@
+const { Client, Collection,Constants, ShardingManager } = require('discord.js')
+const client = new Client({ allowedMentions: { parse: ['users', 'roles',], repliedUser: true, }, restSweepInterval: 30, restTimeOffset: 250, partials: [Constants.PartialTypes.GUILD_MEMBER, Constants.PartialTypes.MESSAGE, Constants.PartialTypes.CHANNEL, Constants.PartialTypes.USER, Constants.PartialTypes.REACTION,], intents: 32767, ws: { properties: { $browser: "Discord Android" } }})
+module.exports = client; client.setup = new Collection();
+["setup"].filter(Boolean).forEach(h => { require(`./src/handlers/${h}`)(client); })

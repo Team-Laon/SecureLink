@@ -1,0 +1,208 @@
+<% if (user) { %>
+  <!DOCTYPE html>
+  <head>
+      <meta charset="utf-8">
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+      <title>모라 대시보드</title>
+      <meta content="" name="description">
+      <meta content="" name="keywords">
+    
+      <!-- Favicons -->
+      <link href="/img/favicon.png" rel="icon">
+      <link href="/img/apple-touch-icon.png" rel="apple-touch-icon">
+    
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    
+      <!-- Vendor CSS Files -->
+      <link href="/vendor/aos/aos.css" rel="stylesheet">
+      <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+      <link href="/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+      <link href="/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+      <link href="/vendor/remixicon/remixicon.css" rel="stylesheet">
+      <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    
+      <!-- Template Main CSS File -->
+      <link href="/css/style.css" rel="stylesheet">
+    
+      <!-- =======================================================
+      * Template Name: eNno - v4.7.0
+      * Template URL: https://bootstrapmade.com/enno-free-simple-bootstrap-template/
+      * Author: BootstrapMade.com
+      * License: https://bootstrapmade.com/license/
+      ======================================================== -->
+    </head>
+    
+    <body>
+    
+      <!-- ======= Header ======= -->
+      <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center justify-content-between">
+    
+          <h1 class="logo"><a href="index.html">Mora</a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+    
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto" href="/stats" target="_blank">상태</a></li>
+              <li><a class="nav-link scrollto " href="https://discord.com/invite/cGU4kPFAVr" target='_blank'>디스코드</a></li>
+              <li><a class="getstarted scrollto" href="/myinfo"><strong><%= user.username %>#<%= user.discriminator %></strong></a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+    
+        </div>
+      </header><!-- End Header -->
+    
+      <!-- ======= Hero Section ======= -->
+      <section id="hero" class="d-flex align-items-center">
+    
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+              <h1>모라 대시보드</h1>
+              <h2>신개념, 다기능 디스코드 봇</h2>
+              <div class="d-flex">
+                <a href="/dashboard/servers" class="btn-get-started scrollto">대시보드</a>
+              </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 hero-img">
+              <img src="/img/hero-img.png" class="img-fluid animated" alt="">
+            </div>
+          </div>
+        </div>
+    
+      </section><!-- End Hero -->
+    
+      <!-- ======= Footer ======= -->
+      <footer id="footer">
+        <div class="container footer-bottom clearfix">
+          <div class="copyright">
+            &copy; Copyright 2022 <strong><span>Mora Team</span></strong>. All Rights Reserved.
+          </div>
+        </div>
+      </footer><!-- End Footer -->
+    
+      <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    
+      <!-- Vendor JS Files -->
+      <script src="/vendor/purecounter/purecounter.js"></script>
+      <script src="/vendor/aos/aos.js"></script>
+      <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="/vendor/glightbox/js/glightbox.min.js"></script>
+      <script src="/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+      <script src="/vendor/swiper/swiper-bundle.min.js"></script>
+      <script src="/vendor/php-email-form/validate.js"></script>
+    
+      <!-- Template Main JS File -->
+      <script src="/js/main.js"></script>
+    
+    </body>
+<% } else { %>
+    <!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      
+        <title>모라 대시보드</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+      
+        <!-- Favicons -->
+        <link href="/img/favicon.png" rel="icon">
+        <link href="/img/apple-touch-icon.png" rel="apple-touch-icon">
+      
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+      
+        <!-- Vendor CSS Files -->
+        <link href="/vendor/aos/aos.css" rel="stylesheet">
+        <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+        <link href="/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+        <link href="/vendor/remixicon/remixicon.css" rel="stylesheet">
+        <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+      
+        <!-- Template Main CSS File -->
+        <link href="/css/style.css" rel="stylesheet">
+      
+        <!-- =======================================================
+        * Template Name: eNno - v4.7.0
+        * Template URL: https://bootstrapmade.com/enno-free-simple-bootstrap-template/
+        * Author: BootstrapMade.com
+        * License: https://bootstrapmade.com/license/
+        ======================================================== -->
+      </head>
+      
+      <body>
+      
+        <!-- ======= Header ======= -->
+        <header id="header" class="fixed-top">
+          <div class="container d-flex align-items-center justify-content-between">
+      
+            <h1 class="logo"><a href="/">Mora</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      
+            <nav id="navbar" class="navbar">
+              <ul>
+                <li><a class="nav-link scrollto" href="/stats" target="_blank">상태</a></li>
+                <li><a class="nav-link scrollto " href="https://discord.com/invite/cGU4kPFAVr" target='_blank'>디스코드</a></li>
+                <li><a class="getstarted scrollto" href="/callback"><strong>로그인</strong></a></li>
+              </ul>
+              <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+      
+          </div>
+        </header><!-- End Header -->
+      
+        <!-- ======= Hero Section ======= -->
+        <section id="hero" class="d-flex align-items-center">
+      
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                <h1>모라 대시보드</h1>
+                <h2>신개념, 다기능 디스코드 봇</h2>
+                <div class="d-flex">
+                  <a href="/callback" class="btn-get-started scrollto">로그인</a>
+                  <!--<a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>-->
+                </div>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 hero-img">
+                <img src="/img/hero-img.png" class="img-fluid animated" alt="">
+              </div>
+            </div>
+          </div>
+      
+        </section><!-- End Hero -->
+      
+        <!-- ======= Footer ======= -->
+        <footer id="footer">
+          <div class="container footer-bottom clearfix">
+            <div class="copyright">
+              &copy; Copyright 2022 <strong><span>Mora Team</span></strong>. All Rights Reserved.
+            </div>
+          </div>
+        </footer><!-- End Footer -->
+      
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+      
+        <!-- Vendor JS Files -->
+        <script src="/vendor/purecounter/purecounter.js"></script>
+        <script src="/vendor/aos/aos.js"></script>
+        <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="/vendor/php-email-form/validate.js"></script>
+      
+        <!-- Template Main JS File -->
+        <script src="/js/main.js"></script>
+      
+      </body>
+<% } %>

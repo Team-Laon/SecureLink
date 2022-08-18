@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+    <title>모라 대시보드</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+  
+    <link rel="icon" href="<%= bot.user.displayAvatarURL({ dynamic: true, size: 64, format: 'png' }) %>">
+    <link href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,800;1,800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link href="//code.ionicframework.com/nightly/css/ionic.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link href="/assets/img/favicon.png" rel="icon">
+    <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+  <!-- style="background-color: #282b30;" -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="/" class="navSpace">
+                    <!-- <img src="/static/Logo.png" class="navicon-fade" width="150" height="auto"> -->
+                    <!-- <img src="<%= bot.user.displayAvatarURL({ dynamic: true, size: 16, format: 'png' }) %>" class="navicon-fade" width="150" height="auto"> -->
+                    <img src="/static/MoraLogo_Small.png" class="navicon-fade" width="150" height="auto">   
+                </a>
+            
+                <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+        
+            <div id="navMenu" class="navbar-end">
+                <div class="navbar-end">
+                    <div>
+                    <a href="/stats" class="navbar-item button button-outline button-balanced button-block button-rounded" style="padding-right: 20px;">
+                        상태
+                    </a>
+                    </div>
+                    <p></p>
+                    <div>
+                    <a href="/invite" class="navbar-item button button-outline button-balanced button-block button-rounded">
+                        봇 초대
+                    </a>
+                    </div>
+                    <p></p>
+                    <div>
+                    <a href="https://mora-bot.kr/invite" class="navbar-item button button-outline button-balanced button-block i button-rounded">
+                        서포트 서버
+                    </a>
+                    </div>
+                </div>
+
+                <% if (user) { %>
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="dropdown is-right is-hoverable">
+                                <div class="dropdown-trigger">
+                                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+                                    <span style="font-family: 'Black Han Sans', sans-serif;"><%= user.username %>#<%= user.discriminator %></span>
+                                    <span class="icon is-small">
+                                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                  </button>
+                                </div>
+                                <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                                  <div class="dropdown-content">
+                                    <a href="/dashboard/servers" class="dropdown-item">
+                                        <i class="fas fa-server" style="padding-right: 5px;"></i> 서버
+                                    </a>
+                                    <hr class="dropdown-divider">
+                                    <a href="/logout" class="dropdown-item">
+                                        <i class="fas fa-sign-out-alt" style="padding-right: 5px;"></i> 로그아웃
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                <% } else { %>
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="buttons">
+                                <a class="button button-outline button-balanced button-block button-rounded">로그인</a>
+                                <a class="button is-light is-rounded" href="/login">
+                                    <i class="fab fa-discord" style="padding-right: 5px;"></i> 로그인
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+    </nav>
+
+</head>
+
+<body>
+
+<!-- <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        if ($navbarBurgers.length > 0) {
+            $navbarBurgers.forEach( el => {
+                el.addEventListener('click', () => {
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+                });
+            });
+        }
+    });
+</script> -->

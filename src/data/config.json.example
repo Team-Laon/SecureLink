@@ -1,0 +1,36 @@
+{
+    "bot": {
+        "tclientId": "테스트용 봇 ID, Test bot ID",
+        "clientId": "메인 봇 ID, Main bot ID",
+        "token": {
+            "main": "메인 봇 토큰 Main bot's Token",
+            "test": "테스트 봇 토큰 Test bot's Token"
+        },
+        "cmd": {
+            "prefixs": "접두사 Prefix",
+            "status_msg": "봇의 상태메세지 Bot's status message"
+        },
+        "dev": {
+            "id": [
+                "개발자 디스코드 ID Developer Discord ID",
+                "개발자 디스코드 ID Developer Discord ID"
+            ],
+            "tag": [
+                "개발자 디스코드 태그 Developer's Discord Nickname & Tag",
+                "개발자 디스코드 태그 Developer's Discord Nickname & Tag"
+            ]
+        }
+    },
+    "db": {
+        "url": "몽고 URL MongoDB Url"
+    },
+    "dashboard": {
+        "TEST_CLIENT_SECRET": "테스트 봇 client secret Test bot's client secret",
+        "CLIENT_SECRET": "메인 봇 client secret Main bot's client secret",
+        "CALLBACK_URL": "메인 봇 콜백 URL Main bot's callback url. Default: https://yourdomain.com/callback",
+        "TEST_CALLBACK_URL": "테스트 봇 콜백 URL Test bot's callback url. Default: http://localhost/callback",
+        "SUPPORT_SERVER": "서포트 서버 초대 링크 Support Server Invite URL",
+        "PORT": 9900,
+        "RECAPTCHA": "google RECAPTCHA key (v3)"
+    }
+}

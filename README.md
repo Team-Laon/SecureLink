@@ -1,5 +1,9 @@
 <img src="https://i.imgur.com/bkXj5zX.png" width="650" height="auto">
 
+**MIT 라이선스이므로 무조건적으로 저작자 표시가 필요합니다**  
+간단히라도 무조건 표시해주세요  
+**예시: Made by [Team Laon](https://laon.dev)**  
+
 ## 아람이 초대하기
 보안 초대 링크뿐만 아니라 다양한 서버 관리 기능을 가진 봇으로 여러분의 서버를 더욱 발전시켜줍니다.  
 [초대하기](https://discord.com/api/oauth2/authorize?client_id=970677290667217006&permissions=8&scope=bot%20applications.commands)

@@ -15,8 +15,8 @@ Discord.JS와 MongoDB을 사용합니다
 **스크린샷:** [보러가기](https://imgur.com/a/p0LShNn)
 
 ## 작동 조건
-- Node.js **v17** 이상
-- Discord.js **v13.9.1** 이상 (v13)
+- Node.js **v16+** 
+- Discord.js **v13+**
 
 ## 중요
 OAuth2 Redirect Uri가 yourdomain.com/callback으로 설정되어야 합니다.  

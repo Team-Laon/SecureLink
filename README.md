@@ -12,7 +12,7 @@
 토큰 유저같은 테러의 소지가 있는 계정이 쉽게 서버 내로 진입하지 못하게 하는 서버 초대 링크입니다.  
 Discord.JS와 MongoDB을 사용합니다
 
-**스크린샷:** [보러가기](https://imgur.com/a/p0LShNn)
+**스크린샷:** [보러가기](https://github.com/Team-Laon/SecureLink/blob/main/img/GWghfhU.png?raw=true)
 
 ## 작동 조건
 - Node.js **v16+** 

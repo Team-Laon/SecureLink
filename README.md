@@ -22,5 +22,6 @@ Discord.JS와 MongoDB을 사용합니다
 OAuth2 Redirect Uri가 yourdomain.com/callback으로 설정되어야 합니다.  
 
 ## 버그 제보 & 서포트
-[이 서버](https://nguard.xyz/invite/laon)에서 버그를 제보해주세요.  
-도움이 필요하다면 위 링크를 타고 들어가 채팅 채널에서 질문해주세요.  
+<!--[이 서버](https://nguard.xyz/invite/laon)에서 버그를 제보해주세요.  -->
+<!-- 도움이 필요하다면 위 링크를 타고 들어가 채팅 채널에서 질문해주세요.  -->
+버그및 오류는 [이슈](https://github.com/Team-Laon/SecureLink/issues) 채널에서 부탁드립니다.

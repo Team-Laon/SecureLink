@@ -19,7 +19,7 @@ Discord.JS와 MongoDB을 사용합니다
 - Discord.js **v13+**
 
 ## 중요
-OAuth2 Redirect Uri가 yourdomain.com/callback으로 설정되어야 합니다.  
+OAuth2 Redirect URL(이)가 yourdomain.com/callback으로 설정되어야 합니다.  
 
 ## 버그 제보 & 서포트
 <!--[이 서버](https://nguard.xyz/invite/laon)에서 버그를 제보해주세요.  -->
